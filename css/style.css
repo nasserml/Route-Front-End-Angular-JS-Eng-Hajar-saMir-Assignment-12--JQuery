@@ -1,0 +1,402 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 3000px;
+}
+:root{
+    --color-rgba-214-46-51-006: rgba(214,46,51,0.6);
+    --color-rgba-214-46-51-004: rgba(214,46,51,0.4);
+    --color--hexa-111: #111;
+
+
+    --font-size-60px: 3.75rem; 
+    --font-size-30px: 1.875rem;
+    --font-size-25px:1.5625rem;
+    --font-size-17px: 1.0625rem;
+    --font-size-16px: 1rem;
+
+
+    --line-height-72px: 4.5rem;
+    --line-height-45px: 2.8125rem;
+    --line-height-38px: 2.375rem;
+    --line-height-24px: 1.5rem;
+
+
+
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+
+    --padding-32px: 2rem;
+    --padding-20px: 1.25rem;
+    --padding-8px: .5rem;
+    --padding-16px: 1rem;
+
+    --transition-delay: 0.3s;
+
+}
+
+
+/*  HEader CSS Rule */
+header{
+    background-image: url("../imgaes/events-heavenly-header.jpg");
+    height: 660px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    color: white;
+    position: relative;
+   
+}
+
+.header {
+    height: 100%;
+    position: relative;
+}
+
+.open-nav{
+    position: absolute;
+    padding-left: var(--padding-16px);
+    /* left: 250px; */
+    left: 0;
+    bottom: 290px;
+    font-size: var(--font-size-30px);
+    line-height: var(--line-height-45px);
+    font-weight: var(--font-weight-400);
+    cursor: pointer;
+}
+
+.header .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header-overlay {
+    position: absolute;
+    top:0 ;
+    left: 0;
+    width: 100%;
+    height:  100%;
+    background-color: var(--color-rgba-214-46-51-006);
+}
+
+.header{
+    z-index: 2;
+}
+.header-caption{
+    transform: translateY(-50%);
+    position: relative;
+}
+.header-caption h2{
+    font-size: var(--font-size-60px);
+    line-height: var(--line-height-72px);
+    font-weight: var(--font-weight-500);
+}
+
+.header-caption p{
+
+    font-size: var(--font-size-16px);
+    line-height: var(--line-height-24px);
+    font-weight: var(--font-weight-400);
+
+}
+
+
+
+/* Nav CSS Rules ================= */
+nav{
+    background-color: #111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /* width: 250px; */
+    width: 0px;
+    z-index: 99;
+    overflow: hidden;
+}
+
+
+.navBar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+
+    display: block;
+    font-size: var(--font-size-25px);
+    line-height: var(--line-height-38px);
+    font-weight: var(--font-weight-400);
+    cursor: pointer;
+    transition: color var(--transition-delay);
+}
+
+.navBar ul li a:hover{
+    color: var(--color-rgba-214-46-51-004);
+}
+
+.navBar ul li:first-child{
+    text-align: end;
+    margin-right: 25px;
+    padding-bottom: 0;
+}
+
+.navBar ul li a i{
+    font-size: var(--font-size-17px);
+    
+}
+
+.navBar ul li{
+    padding-block: var(--padding-20px);
+    padding-left: var(--padding-32px);
+    padding-right: var(--padding-8px);
+}
+
+
+
+
+
+
+
+
+
+/*  Details Css Rules */
+
+
+:root{
+
+    --color-rgb-204-204-204: rgb(204,204,204);
+    --color-rgb-33-37-41: rgb(33, 37,41);
+
+
+    --margin-100px: 6.25rem;
+}
+
+#details{
+    margin-block: var(--margin-100px);
+    text-align: center;
+}
+
+
+.details .container{
+    display: flex;
+    justify-content: center;
+}
+
+.inner-details{
+    width: 56%; 
+}
+
+.details-slide h3{
+    padding: 10px;   
+    background-color:  var(--color-rgba-214-46-51-006);
+    color: white;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.details-slide p{
+    padding: 10px;
+    color: var(--color-rgb-33-37-41);
+    background-color: var(--color-rgb-204-204-204);
+    margin-bottom: 0;
+    display: none;
+}
+
+
+
+
+
+
+/* Duration CSS Rules =============*/
+#duration{
+    background-image: url("../imgaes/invitation-2508607__340.jpg") ;
+    position: relative;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 330px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.duration-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-rgba-214-46-51-006);
+
+}
+
+.duration{
+    width: 100%;
+}
+
+.inner-duration {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 44;
+}
+
+.inner-duration .box{
+    border: 1px solid white;
+    width: 23%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-duration .box span{
+    font-size: var(--font-size-30px);
+    line-height: var(--line-height-45px);
+    font-weight: var(--font-weight-500);
+}
+
+
+
+
+
+
+
+
+
+/* Contact CSS Rules ==========  */
+
+#contact{
+    margin-top: 100px;
+}
+
+.contact .container {
+    padding-block: 100px;
+}
+
+.contact-join-us h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(68,68,68);
+    line-height: 42px;
+}
+
+
+.contact-join-us p{
+    margin-bottom: 16px;
+    color: rgb(119, 119, 119);
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.contact-info-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.contact-info {
+    width: 50%;
+}
+
+.contact-form{
+    width: 48%;
+}
+
+.contact-info h3{
+    margin-bottom:  8px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21.6px;
+    text-align: left;
+    color: rgb(68, 68, 68);
+}
+
+.contact-info > p {
+    margin-bottom: 16px;
+    color: rgb(119, 119, 119);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+
+.contact-info .icons {
+    margin-top: 50px;
+}
+
+.contact-info .icons p{
+    margin-bottom: 35px;
+    color: rgb(119, 119, 119);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+}
+
+.contact-info .icons p i {
+    margin-right: 20px;
+    font-weight: 900;
+}
+
+.contact-info .icons p:nth-child(2) {
+    color: rgb(214, 46, 51);
+}  
+
+.social-icons {
+    margin-top: 60px;
+
+}
+.social-icons i{
+    margin-left: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    color: rgb(119, 119, 119);
+}
+
+.social-icons i:hover{
+    color: white;
+    background-color: #d62e33;
+    border: 1px solid #d62e33;
+}
+
+.contact-form form > *{
+    margin-bottom: 20px;
+}
+
+#numberOfCharacters{
+    color: rgb(214, 46, 51);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.contact-form form button{
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(214,46,51);
+    color: white;
+    font-size: 16px;
+}
+
+.contact-form form button:hover{
+    color: white;
+    background-color: rgb(214, 46, 51);
+}
